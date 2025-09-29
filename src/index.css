@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+/* Minimal base so utilities dominate */
+body { background: #f8fafc; color: #0f172a; }
