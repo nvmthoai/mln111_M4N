@@ -7,6 +7,7 @@ import TinhChat from './pages/TinhChat'
 import QuanHe from './pages/QuanHe'
 import ChartSection from './components/ChartSection'
 import Quiz from './components/Quiz'
+import ChatBot from './components/ChatBot'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -328,6 +329,9 @@ function App() {
         </motion.nav>
 
         <AnimatedRoutes />
+
+        {/* ChatBot Component */}
+        <ChatBot />
 
         <motion.footer 
           initial={{ opacity: 0 }}
