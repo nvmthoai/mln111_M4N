@@ -2,11 +2,12 @@ import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router
 import { AnimatePresence, motion } from 'framer-motion'
 import Home from './pages/Home'
 import YThucXaHoi from './pages/YThucXaHoi'
+import YThucXaHoiLanding from './pages/YThucXaHoiLanding'
 import KetCau from './pages/KetCau'
 import TinhChat from './pages/TinhChat'
 import QuanHe from './pages/QuanHe'
-import ChartSection from './components/ChartSection'
-import Quiz from './components/Quiz'
+
+import LifeChoicesGame from './components/LifeChoicesGame'
 import ChatBot from './components/ChatBot'
 
 function AnimatedRoutes() {
@@ -77,7 +78,7 @@ function AnimatedRoutes() {
                     Khám phá <motion.strong 
                       whileHover={{ scale: 1.05, color: "#2563eb" }}
                       className="cursor-pointer"
-                    >mối liên hệ biện chứng</motion.strong> giữa tồn tại xã hội và ý thức xã hội qua biểu đồ tương tác và quiz trắc nghiệm.
+                    >mối liên hệ biện chứng</motion.strong> giữa tồn tại xã hội và ý thức xã hội qua biểu đồ tương tác và trò chơi mô phỏng cuộc sống.
                   </motion.p>
 
                   <motion.div
@@ -95,12 +96,12 @@ function AnimatedRoutes() {
                       Khám phá ngay <motion.span animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>→</motion.span>
                     </motion.a>
                     <motion.a 
-                      href="#quiz"
+                      href="#game"
                       whileHover={{ scale: 1.05, borderColor: "#2563eb", backgroundColor: "#f8fafc" }}
                       whileTap={{ scale: 0.95 }}
                       className="inline-flex items-center gap-2 rounded-xl border-2 border-slate-200 bg-white px-6 py-3 text-slate-700 font-semibold"
                     >
-                      Làm quiz
+                      🎮 Chơi game
                     </motion.a>
                   </motion.div>
                 </motion.div>
@@ -196,14 +197,7 @@ function AnimatedRoutes() {
                 </div>
               </motion.section>
 
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <ChartSection />
-              </motion.div>
+             
 
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -211,13 +205,24 @@ function AnimatedRoutes() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <Quiz />
+                <LifeChoicesGame />
               </motion.div>
             </main>
           </motion.div>
         } />
         
         <Route path="/y-thuc-xa-hoi" element={
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.05 }}
+            transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
+          >
+            <YThucXaHoiLanding />
+          </motion.div>
+        } />
+        
+        <Route path="/y-thuc-xa-hoi-detail" element={
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}

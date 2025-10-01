@@ -1,14 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { Pie } from 'react-chartjs-2'
-import {
-  Chart as ChartJS,
-  ArcElement,
-  Tooltip,
-  Legend
-} from 'chart.js'
-
-ChartJS.register(ArcElement, Tooltip, Legend)
 
 const defaultCosts = {
   housing: 30,
@@ -37,25 +28,6 @@ export default function ChartSection() {
 
   const total = useMemo(() => Object.values(costs).reduce((a, b) => a + b, 0), [costs])
   const remaining = useMemo(() => Math.max(0, income - total), [income, total])
-
-  const data = useMemo(() => ({
-    labels: ['Nhà ở', 'Ăn uống', 'Giáo dục', 'Giải trí', 'Còn lại'],
-    datasets: [
-      {
-        label: '%',
-        data: [costs.housing, costs.food, costs.education, costs.entertainment, remaining],
-        backgroundColor: [
-          '#60a5fa',
-          '#93c5fd',
-          '#bfdbfe',
-          '#1e40af',
-          '#22c55e'
-        ],
-        borderColor: '#ffffff',
-        borderWidth: 3,
-      },
-    ],
-  }), [costs, remaining])
 
   const handleSlider = (key) => (e) => {
     const value = Number(e.target.value)
@@ -102,11 +74,11 @@ export default function ChartSection() {
         <p className="text-slate-600">Điều chỉnh tham số để quan sát tác động của chi phí đến phần còn lại.</p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="max-w-2xl mx-auto">
         <motion.div 
           className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <motion.div 
@@ -226,23 +198,6 @@ export default function ChartSection() {
                 {remaining}%
               </motion.span>
             </motion.div>
-          </motion.div>
-        </motion.div>
-
-        <motion.div 
-          className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm flex items-center justify-center"
-          initial={{ opacity: 0, x: 50, rotateY: -15 }}
-          whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
-          transition={{ delay: 0.4 }}
-          whileHover={{ scale: 1.02, rotateY: 5 }}
-        >
-          <motion.div 
-            className="w-full max-w-sm"
-            initial={{ scale: 0, rotate: -180 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
-          >
-            <Pie data={data} />
           </motion.div>
         </motion.div>
       </div>
