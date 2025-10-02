@@ -17,6 +17,7 @@ export default function QuanHe() {
         <ul>
           <li>Có thể lạc hậu so với tồn tại xã hội.</li>
           <li>Có thể vượt trước, dự báo tương lai.</li>
+          <li>Ý thức xã hội có tính kế thừa</li>
           <li>Các hình thái ý thức xã hội có tác động qua lại lẫn nhau.</li>
         
         </ul>
