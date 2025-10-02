@@ -89,7 +89,7 @@ export default function WaveHero({ title, subtitle, children }) {
       
       <div className="relative px-6 py-12 md:px-10 md:py-16">
         <motion.h1 
-          className="text-2xl md:text-4xl font-extrabold m-0 mb-2"
+          className="text-2xl md:text-4xl font-extrabold m-0 mb-2 text-slate-50"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
