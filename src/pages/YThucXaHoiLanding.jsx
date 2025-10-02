@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import StoryBook from '../components/StoryBook'
 
 export default function YThucXaHoiLanding() {
   return (
@@ -119,9 +118,6 @@ export default function YThucXaHoiLanding() {
               Khám phá 10 câu chuyện thực tế minh họa cho lý thuyết MLN về vấn đề hôn nhân - gia đình hiện đại
             </p>
           </motion.div>
-
-          {/* Story Book Component */}
-          <StoryBook />
         </div>
       </motion.section>
 

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import TOC from '../components/TOC'
 import WaveHero from '../components/WaveHero'
-import StoryBook from '../components/StoryBook'
 
 export default function YThucXaHoi() {
   return (
@@ -414,15 +413,7 @@ export default function YThucXaHoi() {
         </motion.div>
 
         {/* Story Book Section */}
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 }
-          }}
-          className="my-12"
-        >
-          <StoryBook />
-        </motion.div>
+
       </motion.article>
       
       <motion.div
