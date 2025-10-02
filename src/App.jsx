@@ -70,6 +70,7 @@ function AnimatedRoutes() {
                   </motion.h1>
                   
                   <motion.p 
+
                     className="mt-4 text-slate-600 max-w-4xl mx-auto text-lg"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -88,11 +89,12 @@ function AnimatedRoutes() {
                     className="mt-8 flex flex-wrap justify-center gap-4"
                   >
                     <motion.a 
-                      href="#chart"
+                      href="/y-thuc-xa-hoi"
                       whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
                       whileTap={{ scale: 0.95 }}
                       className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white font-semibold shadow-lg"
                     >
+                    
                       Khám phá ngay <motion.span animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>→</motion.span>
                     </motion.a>
                     <motion.a 

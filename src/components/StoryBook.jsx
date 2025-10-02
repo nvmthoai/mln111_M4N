@@ -111,7 +111,7 @@ const StoryBook = () => {
           📖 Câu chuyện Lan và Minh: Tình yêu thời hiện đại
         </h2>
         <p className="text-slate-600 max-w-3xl mx-auto">
-          10 cảnh đời của một đôi bạn trẻ Sài Gòn - từ tình yêu ban đầu đến quyết định trì hoãn hôn nhân 
+           Câu chuyện của một đôi bạn trẻ Sài Gòn - từ tình yêu ban đầu đến quyết định trì hoãn hôn nhân 
           để vượt qua khó khăn kinh tế và xây dựng tương lai
         </p>
       </motion.div>

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import TOC from '../components/TOC'
 import WaveHero from '../components/WaveHero'
-import StoryBook from '../components/StoryBook'
 
 export default function YThucXaHoi() {
   return (
@@ -12,7 +11,7 @@ export default function YThucXaHoi() {
     >
       <motion.article 
         className="prose prose-slate max-w-none"
-        initial="hidden"
+   ial="hidden"
         animate="visible"
         variants={{
           hidden: {},
@@ -38,9 +37,25 @@ export default function YThucXaHoi() {
             visible: { opacity: 1, scale: 1, rotateY: 0 }
           }}
           whileHover={{ scale: 1.02, rotateY: 2 }}
-          className="overflow-hidden rounded-xl"
+          className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200"
         >
-          <img className="w-full border" src="/svg/awareness.svg" alt="Minh hoạ ý thức xã hội" />
+          <div className="max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">🏗️ Tồn tại xã hội</h3>
+            <p className="text-slate-700 leading-relaxed mb-6">
+              <strong>Tồn tại xã hội</strong> là toàn bộ điều kiện vật chất, đời sống kinh tế, sinh hoạt hàng ngày của con người 
+              (ví dụ: trình độ sản xuất, quan hệ lao động, điều kiện tự nhiên, môi trường sống…).
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div className="bg-white/70 p-4 rounded-lg border border-white/40">
+                <div className="font-semibold text-orange-800 mb-2">💰 Áp lực kinh tế</div>
+                <p className="text-orange-700">Chi phí sinh hoạt, nhà ở, nuôi dạy con cao khiến nhiều cặp đôi trẻ trì hoãn kết hôn hoặc quyết định không sinh con.</p>
+              </div>
+              <div className="bg-white/70 p-4 rounded-lg border border-white/40">
+                <div className="font-semibold text-blue-800 mb-2">🏢 Môi trường việc làm</div>
+                <p className="text-blue-700">Cạnh tranh cao, người trẻ phải tập trung nhiều vào sự nghiệp và phát triển bản thân.</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
         
         <motion.div

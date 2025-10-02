@@ -25,7 +25,7 @@ export default function YThucXaHoiLanding() {
             </p>
             <p className="text-lg text-slate-500 max-w-3xl mx-auto">
               Hiểu rõ tại sao thế hệ trẻ ngày nay ngại kết hôn và sinh con thông qua mối quan hệ biện chứng giữa 
-              <strong> tồn tại xã hội</strong> và <strong>ý thức xã hội</strong>
+              <a href="/quan-he"><strong> tồn tại xã hội</strong> và <strong>ý thức xã hội</strong></a>
             </p>
           </motion.div>
         </div>
