@@ -65,6 +65,53 @@ const StoryBook = () => {
       title: "Cảnh 10 – Hy vọng",
       content: "Lan và Minh đứng trên cầu Thủ Thiêm, tay trong tay, nhìn về phía thành phố rực rỡ ánh đèn. Trong mắt họ ánh lên niềm hy vọng, tình yêu và sự kiên cường để vượt qua khó khăn.",
       image: "/story_10.png"
+    {
+      id: 3,
+      title: "Cảnh 3 – Tính toán tài chính",
+      content: "Hai người ngồi trước bàn chất đầy hóa đơn, sổ ghi chép và máy tính cầm tay. Minh cẩn thận ghi số liệu, trong khi Lan trông đầy lo lắng. Không khí căng thẳng nhưng vẫn có sự đồng lòng.",
+      image: "/src/assets/story_3.png"
+    },
+    {
+      id: 4,
+      title: "Cảnh 4 – Tranh luận nhỏ",
+      content: "Lan đứng bên cửa sổ, khoanh tay, khuôn mặt thoáng giận. Minh ngồi ở bàn, tỏ ra mệt mỏi. Giữa hai người có chút căng thẳng, không khí trong căn phòng trở nên nặng nề.",
+      image: "/src/assets/story_4.png"
+    },
+    {
+      id: 5,
+      title: "Cảnh 5 – Làm hòa",
+      content: "Sau cuộc tranh luận, Lan và Minh ngồi cạnh nhau trên ghế sofa. Họ nắm tay và mỉm cười nhẹ nhàng, ánh đèn bàn tỏa ra cảm giác ấm áp và bình yên.",
+      image: "/src/assets/story_5.png"
+    },
+    {
+      id: 6,
+      title: "Cảnh 6 – Quyết định trì hoãn hôn nhân",
+      content: "Lan và Minh nắm tay nhau đi dạo trên phố đi bộ Nguyễn Huệ vào lúc hoàng hôn. Cả hai nhìn nhau đầy thấu hiểu, cùng thống nhất rằng họ sẽ chờ đến khi điều kiện ổn định mới kết hôn.",
+      image: "/src/assets/story_6.png"
+    },
+    {
+      id: 7,
+      title: "Cảnh 7 – Làm việc chăm chỉ",
+      content: "Lan chăm chú làm việc trên máy tính trong văn phòng, còn Minh lao động tại công trình xây dựng. Cả hai đều mệt mỏi nhưng ánh mắt toát lên sự kiên định và quyết tâm.",
+      image: "/src/assets/story_7.png"
+    },
+    {
+      id: 8,
+      title: "Cảnh 8 – Du lịch cùng nhau",
+      content: "Hai người cùng nhau đi xe máy trên con đường miền Tây xanh mát. Lan ngồi sau Minh, ôm chặt, cả hai cùng cười rạng rỡ, xung quanh là những cánh đồng lúa trải dài.",
+      image: "/src/assets/story_8.png"
+    },
+    {
+      id: 9,
+      title: "Cảnh 9 – Ước mơ tương lai",
+      content: "Lan và Minh ngồi trên nóc nhà, ngắm nhìn những tòa nhà sáng đèn của Sài Gòn về đêm. Họ trò chuyện về ước mơ, về một cuộc sống tốt đẹp hơn trong tương lai.",
+      image: "/src/assets/story_9.png"
+    },
+    {
+      id: 10,
+      title: "Cảnh 10 – Hy vọng",
+      content: "Lan và Minh đứng trên cầu Thủ Thiêm, tay trong tay, nhìn về phía thành phố rực rỡ ánh đèn. Trong mắt họ ánh lên niềm hy vọng, tình yêu và sự kiên cường để vượt qua khó khăn.",
+      image: "/src/assets/story_10.png"
     }
   ]
 
