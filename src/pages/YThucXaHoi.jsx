@@ -11,7 +11,7 @@ export default function YThucXaHoi() {
     >
       <motion.article 
         className="prose prose-slate max-w-none"
-   ial="hidden"
+        initial="hidden"
         animate="visible"
         variants={{
           hidden: {},
@@ -428,16 +428,7 @@ export default function YThucXaHoi() {
           </div>
         </motion.div>
 
-        {/* Story Book Section */}
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 }
-          }}
-          className="my-12"
-        >
-          <StoryBook />
-        </motion.div>
+
       </motion.article>
       
       <motion.div
