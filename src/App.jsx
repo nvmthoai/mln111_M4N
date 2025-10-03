@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, NavLink, useLocation, Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Home from './pages/Home'
 import YThucXaHoi from './pages/YThucXaHoi'
@@ -88,15 +88,17 @@ function AnimatedRoutes() {
                     transition={{ duration: 0.6, delay: 0.7 }}
                     className="mt-8 flex flex-wrap justify-center gap-4"
                   >
-                    <motion.a 
-                      href="/y-thuc-xa-hoi"
+                    <motion.div 
                       whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
                       whileTap={{ scale: 0.95 }}
-                      className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white font-semibold shadow-lg"
                     >
-                    
-                      Khám phá ngay <motion.span animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>→</motion.span>
-                    </motion.a>
+                      <Link 
+                        to="/y-thuc-xa-hoi"
+                        className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-white font-semibold shadow-lg"
+                      >
+                        Khám phá ngay <motion.span animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>→</motion.span>
+                      </Link>
+                    </motion.div>
                     <motion.a 
                       href="#game"
                       whileHover={{ scale: 1.05, borderColor: "#2563eb", backgroundColor: "#f8fafc" }}
